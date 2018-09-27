@@ -43,8 +43,10 @@ namespace Mazes
         private void TryMoveTo(Point destination)
         {
             if (path.Count > 1000 || maze.IsWall(destination))
-                throw new Exception("Robot is broken!");
+                throw new Exception("Robot is broken! "+ destination+ " "+ maze.IsWall(destination)+" "+ path.Count );
             path.Add(destination);
+           
+
         }
     }
 }

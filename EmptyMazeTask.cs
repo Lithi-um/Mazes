@@ -5,7 +5,7 @@
 		public static void MoveOut(Robot robot, int width, int height)
 		{
 
-            int steps = 2;
+            int steps = 3;
             MoveDown(steps, robot, height);
             MoveRight(steps, robot, width);
         }
